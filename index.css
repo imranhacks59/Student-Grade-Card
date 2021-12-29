@@ -1,0 +1,71 @@
+body{
+background-color: rgb(106, 214, 214);
+}
+
+/* .main{
+    color: aqua;
+} */
+
+.middle{
+    /* background-color: bisque; */
+    background-color: rgb(131, 131, 238);
+    width: 50%;
+    height: 35vw;
+    /* border: 2px solid red; */
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.title{
+    width: 10%;
+    margin-left: 4%;
+    display: inline-block;
+    animation-name: head;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+.right-side{
+    display: flex;
+
+    flex-direction: column;
+    width: 55%;
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    padding: 3%;
+
+}
+.show-percentage{
+    /* display: inline; */
+    /* background-color: aquamarine; */
+    margin-left: 50%;
+    /* margin-bottom: 20px; */
+    /* margin-top: 120%; */
+}
+
+.result{
+    position: relative;
+    margin-left: 10%;
+}
+
+@keyframes head{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 760px){
+    /* body{
+        bacc
+    } */
+    .middle{
+        width: 101%;
+        height: 167vw;
+    }
+}
